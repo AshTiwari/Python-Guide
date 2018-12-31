@@ -25,11 +25,14 @@
  ******************************************** Excercise ******************************************
  1. Program1
   a)    >> x = "Hello"
-  b)    >> x.lower()
-  c)    >> x = x.lower()
+  b)    >> print("x")
+  c)    >> x.lower()
+  d)    >> print("x")
+  e)    >> x = x.lower()
+  f)    >> print("x")
   
-  What is the value of x at each step a,b,c ?
-  Also, does the program give any O/P? If yes, what is the O/P?
+  Predict the O/P  at each step b,c,d,f ?
+  
   
   
   
