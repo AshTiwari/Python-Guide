@@ -8,7 +8,7 @@ Varibles:
 2.In a variable, we can store:
         numeric values
           >> x = 1
-          >> x = 1.000000
+          >> y = 1.000000
         sequence -list, tuple, range
         binary - byte, bytearray
         boolean
@@ -93,9 +93,9 @@ Ans:
     >> x= 1
     >> y= 1.0
     
-    Predict O/P
-    a) x is y
-    b) x == y
+    Predict O/P in boolean
+    a) x is y   
+    b) x == y 
     
 
 
