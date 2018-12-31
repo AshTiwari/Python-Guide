@@ -1,0 +1,37 @@
+1.Strings store alphanumeric(text) values.
+
+
+2.Strings are immutable. 
+  
+  i.e They can be re-written but cannot be edited.
+    ( refer Q.1)
+    
+      
+3.There are built-in methods you can call on strings in python.
+
+  eg. 
+    >> x = "python"
+    >> x.capitalize()          // Capitalizes first alphabet
+    
+    O/P:
+        Python
+
+ Find the link to the list of methods on string in the bottom.
+ 
+ 
+ 
+ 
+ 
+ ******************************************** Excercise ******************************************
+ 1. Program1
+  a)    >> x = "Hello"
+  b)    >> x.lower()
+  c)    >> x = x.lower()
+  
+  What is the value of x at each step a,b,c ?
+  Also, does the program give any O/P? If yes, what is the O/P?
+  
+  
+  
+  ******************************************* Reference ***************************************
+  Link to <u> Methods on String </u> :- https://www.programiz.com/python-programming/methods/string
