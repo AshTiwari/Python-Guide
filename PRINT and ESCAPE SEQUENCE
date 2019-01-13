@@ -98,6 +98,20 @@ Sequence
               hex value	
 
 
+
+
+
+!!!! IMPORTANT !!!
+
+r or R
+
+print(r"any escape sequence")
+
+
+
+
+
+
 Credits: LinuxConfig.org <https://linuxconfig.org/list-of-python-escape-sequence-characters-with-examples>
 
 
