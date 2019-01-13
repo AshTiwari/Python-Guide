@@ -117,7 +117,8 @@ print(r"any escape sequence \n \t \b except just before the closing inverted com
 print(r"any escape sequence \n \t \b except just before the closing inverted comma\")
 	      SyntaxError: EOL while scanning string literal        
 
-
+print(r"Also, no inverted comma(") should be placed in between.")
+	      SyntaxError: invalid syntax
 
 
 Emoji:
@@ -137,6 +138,10 @@ O/P:  A) PYTHON \'
 
 2. Predict Output
       print(r"Python \\")
+
+3. Predict Output
+	print(r' Arjun's Book') 
+
 
 Credits: LinuxConfig.org <https://linuxconfig.org/list-of-python-escape-sequence-characters-with-examples>
 
