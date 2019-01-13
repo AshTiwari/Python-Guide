@@ -17,10 +17,41 @@
         Python
 
  Find the link to the list of methods on string in the bottom.
+
+
+ 4. String Concatination
  
+   a) First_Name = "Guido"
+      Middle_Name = "van"
+      Last_Name = "Rossum"
  
+   b) Full_Name = First_Name + Middle_Name + Last_Name
+      print(Full_Name)
+      O/P:
+      GuidovanRossum
  
- 
+   c) Full_Name = First_Name + " " Middle_Name + " " Last_Name
+      print(Full_Name)
+      O/P:
+      Guido van Rossum
+    
+    d) name = "PYTHON" 
+       print(name * 3)
+       O/P:
+       PYTHONPYTHONPYTHON
+       
+    e) print(name + 3)
+       O/P:
+       TypeError: can only concatenate str (not "int") to str
+       
+    f) print(name + '3')
+       print(name + str(3) )
+       O/P:
+       PYTHON3
+       PYTHON3
+       
+    
+    
  
  ******************************************** Excercise ******************************************
  1. Program1
