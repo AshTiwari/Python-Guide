@@ -124,8 +124,12 @@ print(r"Also, no inverted comma(") should be placed in between.")
 Emoji:
 Unicode emoji code link.
 1.Copy code of any emoji.
-https://unicode.org/emoji/charts/full-emoji-list.html
 
+	https://unicode.org/emoji/charts/full-emoji-list.html
+	Eg:U+1F48B	
+	
+2.Replace '+' with '000' and place a '\' before 'U'.
+	print("\U0001F48B")	
 
 
 
