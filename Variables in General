@@ -1,5 +1,19 @@
 Varibles:
 
+Naming Convention:
+
+1. You can use alphabets, numbers and ony one special characteri.e underscore ( _ )
+2. Variables can begin with alphabets and underscore but not with numbers.
+
+e.g:
+     Valid:
+     _name, _name1, _name_1, name_1, name1age
+     
+     Not valid:
+     2name, 2_name, $name, &name
+
+
+
 1. You don't have to initialize variables.
        >>   int x=0;  (NO)
        >>       x=0   (Yes)
@@ -98,7 +112,8 @@ Ans:
     b) x == y 
     
 
-
+2. Is it valid variable name?
+       name_
 
 
 ****************************************** Refrences ****************************************************
