@@ -22,8 +22,11 @@ Not allowed:
    print(' single inverted comma  ('  ') is not allowed in single inverted comma')
           O/P: single inverted comma  () is not allowed in single inverted comma
    
-   
-   !!!GIVES SYNTAX ERROR!!!
+   print("Python \ Guide")
+          O/P: Python Guide
+  
+  
+  !!!GIVES SYNTAX ERROR!!!
   
    print(' Can't put blackslash before the ending single inverted comma \')                    
         #SyntaxError: EOL while scanning string literal
@@ -43,6 +46,8 @@ Using ESCAPE SEQUENCE:
 
 Escape              Description	                  Example	                      Output
 Sequence	    
+\              prints nothing                     print("Python \ Guide")        Python Guide
+
 \\	           Prints Backslash	                 print("C:\New Folder\\")	      C:\New Folder\        
                                                  print("C:\New Folder \\")      C:\New Folder\                   
 
@@ -105,10 +110,16 @@ Sequence
 
 r or R
 
-print(r"any escape sequence")
+print(r"any escape sequence")                              # !!!!!verify!!!!!!   
 
 
 
+Quiz:
+
+1. print("PYTHON \'")
+
+O/P:  A) PYTHON \'
+      B) PYTHON '
 
 
 
