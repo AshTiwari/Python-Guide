@@ -107,11 +107,15 @@ Sequence
 
 
 !!!! IMPORTANT !!!
+Raw String:
 
 r or R
 
-print(r"any escape sequence")                              # !!!!!verify!!!!!!   
-
+print(r"any escape sequence \n \t \b except just before the closing inverted comma")                                 
+        O/P: any escape sequence \n \t \b except just before the closing inverted comma
+        
+print(r"any escape sequence \n \t \b except just before the closing inverted comma\")
+	      SyntaxError: EOL while scanning string literal        
 
 
 Quiz:
@@ -121,7 +125,8 @@ Quiz:
 O/P:  A) PYTHON \'
       B) PYTHON '
 
-
+2. Predict Output
+      print(r"Python \\")
 
 Credits: LinuxConfig.org <https://linuxconfig.org/list-of-python-escape-sequence-characters-with-examples>
 
