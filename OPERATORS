@@ -1,0 +1,82 @@
+TYPES:
+
+1.Arithmetic Operators
+
+2.Comparison (Relational) Operators
+
+3.Assignment Operators
+
+4.Logical Operators
+
+5.Bitwise Operators
+
+6.Membership Operators
+
+7.Identity Operators
+
+
+
+
+
+
+Algebraic Operators
+
+1) Addition
+Adds values on either side of the operator.	
+a + b = 31
+       
+
+2)Subtraction	
+Subtracts right hand operand from left hand operand.
+20 – 30 = -10
+       
+
+3)Multiplication	
+Multiplies values on either side of the operator	
+5 * 6 = 30
+
+
+4)Float Division	
+Divides left hand operand by right hand operand
+5 / 2 = 2.5
+4 / 2 = 2.0
+      
+
+5)Integer Division/Floor Division 
+  
+  - If either one is float, the answer is float.
+  - The division is similar to floor function in maths. 
+        i.e 3.45 ==> 3
+        &  -3.45 ==> -4
+   E.g.
+    9//2 = 4 
+    9.0//2.0 = 4.0, 
+   -11//3 = -4, 
+   -11.0//3 = -4.0
+   
+   
+6) Exponent	
+Performs exponential (power) calculation on operators. a raise to b	
+
+2**3 =8 
+	     
+
+7) Modulus	
+ returns remainder	when a divides b
+ 5 % 2 = 1
+ 
+
+8) Round Function
+      print(round(expression, no. of decimal places)
+      
+      E.g.
+      print(round( 5/3 , 4 )
+      O/P: 1.6666
+      
+      
+9) Precedence Rule      
+      
+  
+      
+   
+   
