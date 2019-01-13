@@ -118,6 +118,16 @@ print(r"any escape sequence \n \t \b except just before the closing inverted com
 	      SyntaxError: EOL while scanning string literal        
 
 
+
+
+Emoji:
+Unicode emoji code link.
+1.Copy code of any emoji.
+https://unicode.org/emoji/charts/full-emoji-list.html
+
+
+
+
 Quiz:
 
 1. print("PYTHON \'")
