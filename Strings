@@ -58,9 +58,9 @@
   a)    >> x = "Hello"
   b)    >> print("x")
   c)    >> x.lower()
-  d)    >> print("x")
+  d)    >> print(x)
   e)    >> x = x.lower()
-  f)    >> print("x")
+  f)    >> print(x)
   
   Predict the O/P  at each step b,c,d,f ?
   
