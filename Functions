@@ -2,14 +2,14 @@
 
 <u> Syntax : </u>
         
-          >> def <funct_name> (parameters)
+          >> def <funct_name> (parameters):
           >>        statements
                   
           >>        return <expression>
                   
 
 E.g:
-    >>  def increment(val)
+    >>  def increment(val):
     >>       val=val+1
     >>       print(val)
             
@@ -34,7 +34,7 @@ Note:
 
 ****************************************************** Excercise *******************************************************
 
-1. >>  def increment(val)
+1. >>  def increment(val):
     >>       val=val+1
     >>       print(val)
             
