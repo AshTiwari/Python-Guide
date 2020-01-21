@@ -1,20 +1,17 @@
 # verbose
+
 import re
 
-print('Verbose allows us to add space or newline character even when the are not present in our regular expression.')
+msg = 'Email me at ashu.atiwa@gmail.com or ashtiwari1498@yahoo.com'
+print("Verbose just makes the progrm look good. It dosen't change the output.")
 
-msg1 = ' Call me at +91-9999900000 or 022-9999900000'
-print('Message: '+msg1)
+emailRegex = re.compile(r"""( 
+            [a-z0-9_.-]+              # local Part 
+            @                             # single @ sign 
+            [0-9a-z]+                # Domain name 
+            \.                            # single Dot . 
+            [a-z]{2,6})                 # Top level Domain   
+             """,re.VERBOSE | re.IGNORECASE)
 
-phoneRegex = re.compile(r'''
-(+|0)\d\d   #area code with 022 or +91
--
-\d{10}      # 10 digit phone number.''',re.VERBOSE)
+print(emailRegex.findall(msg))
 
-print(phoneRegex.findall(msg1))
-
-
-
-#####################
-''' CHECK ERROR '''
-###################
