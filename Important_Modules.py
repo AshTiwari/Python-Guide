@@ -2,23 +2,31 @@
 
 #1
 import sys
-#sys.exit()     #Used to end program prematurely.
+#Used to end program prematurely.
 
 
 #2
-import pyperclip                #used to copy and paste stuff at clipboard
-pyperclip.copy('HELLO')
-
-#if we copy something outside the python program and pyper paste it on a variable,
-#the variable will store the data.
-vaariable = pyperclip.paste()               
+import pyperclip
+#used to copy and paste stuff at clipboard
+   
 
 #3
 import re
-
-regex = re.compile(r'.')
-mo = regex.search('message')
-mo.group()
-regex.findall('message')
+#find regular expressions in string.
 
 #4
+import os
+
+#join the parameters to make a path suitable for the os it is working on
+#get current working directory.
+#change directory.
+#absolute path and check if it is absolute path.
+#relative path between two paths.
+
+
+
+
+
+
+
+
