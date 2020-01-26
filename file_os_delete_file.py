@@ -7,8 +7,11 @@ import os
 #PermissionError: [WinError 5] Access is denied: 'C://Users//MSI//Desktop//folder'
 #We can try to delete folder by changing user account control.
 
+#Alternatively, we can check that the programming is running by typing command
+#on python website.
 
-#unlink()
+
+#unlink() for txt files
 open('D://text.txt','w')
 print('File created.')
 os.unlink('D://text.txt')      #delete file
@@ -21,10 +24,10 @@ except FileExistsError:
 try:
     os.unlink('D://folder')        #delete folder
 except PermissionError:
-    print("Python dosen't have permission to delete the folder.")
+    print("Python dosen't have permission to delete the folderon this OS.")
 
 
-#rmdir
+#rmdir for directories.
 try:
     os.mkdir('D://fold:er2')
 except FileExistsError:
@@ -32,7 +35,7 @@ except FileExistsError:
 try:
     os.rmdir('D://folder2')        #only deletes empty folder.
 except PermissionError:
-    print("Python dosen't have permission to delete the folder.")
+    print("Python dosen't have permission to delete the folder on this OS.")
 
 
 
