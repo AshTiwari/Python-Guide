@@ -28,6 +28,7 @@ except PermissionError:
 
 
 #rmdir for directories.
+#NOTE:  Only deltes empty folder.
 try:
     os.mkdir('D://fold:er2')
 except FileExistsError:
