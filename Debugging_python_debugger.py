@@ -3,15 +3,20 @@
 '''
 NOTE: Run normally means without debugger.
 Debugger has following buttons:
-Go: Runs all code normally fast and only stops at **breakpoint**.
-Step (in):Enters into function.
-(Step) Over:Skips function by running normally and jumps to next line.
-(step) Out:While inside a function, it will run all steps normally and
-            jump out of the function.
-Quit:Quit the bedugger and run normally.
+
+1. Go: Continue program until next **breakpoint** or end of the file appears.
+
+2. Step (in): Step into a function call.
+
+3. (Step) Over: Step over current line of code and pause on next line.
+
+4. (step) Out:While inside a function, it will jump out of the function.
+
+5. Quit:Quit the bedugger and run normally.
 
 How to set a breakpoint?
 Ans:  Select a line, right click and select 'Set Breakpoint.'
+
 '''
 
 import random
