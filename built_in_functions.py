@@ -7,7 +7,13 @@ print(5)
 list1=[1,2]
 sum(list1)
 int()
-print('\n')
+print ('\n')
+
+
+#some more function on string
+str1 = "HEllo, I am priyansh"
+print (str1.split())
+
 
 
 #2.Standard library
