@@ -1,0 +1,14 @@
+If - else
+
+
+Syntax:
+
+    >> if <condition> :
+    >>      <set of instructions>
+    
+    >>  elif <condition> :
+    >>      <set of instructions>
+    
+    >> else :
+    >>      <set of instructions>
+           

@@ -1,0 +1,58 @@
+<h> Functions </h>
+
+<u> Syntax : </u>
+        
+          >> def <funct_name> (parameters):
+          >>        statements
+                  
+          >>        return <expression>
+                  
+
+E.g:
+    >>  def increment(val):
+    >>       val=val+1
+    >>       print(val)
+            
+    >>       return val
+            
+
+    >> x= increment(4)
+    >> print(x)
+    
+    <b> O/P :</b>
+        5
+        5
+ 
+
+Note:
+1.def stands for definition.
+2.Parameters dosen't have types.
+    => It has both advantage and disadvantage.
+        1. Coding becomes easy.
+        2. Debugging becomes difficult.
+
+
+****************************************************** Excercise *******************************************************
+
+1. >>  def increment(val):
+    >>       val=val+1
+    >>       print(val)
+            
+   
+            
+
+    >> x= increment(4)
+    >> print(x)
+    
+    Predict O/P:
+    
+    
+    Ans:4
+        None
+        
+        The function returns 'None'. So x takes 'None'. 
+        Thus, not secifying types may give results which we didn't expect at begining.
+        
+ 
+
+   

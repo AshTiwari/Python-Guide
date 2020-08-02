@@ -1,0 +1,46 @@
+<h>for loop </h>
+ 
+Syntax:
+   for i in range( start , end [, step] ):              // i dosen't take end. i.e. it stops at end-1 ; By default step is => i=i+1
+        step 1. inside 'for loop'                     // Statements inside 'for loop' should be indented
+                ...
+        step last. inside 'for loop'
+        
+        
+ 
+<h> while loop</h>
+
+Syntax :
+ i = start
+ while( i < end ):
+    step 1. inside 'for loop'                     // Statements inside 'while loop' should be indented
+                ...
+    step n. inside 'for loop'
+    
+    step last. step                               //step means update condition
+
+
+
+
+
+
+
+
+
+*********************************************** Excercise *****************************************
+
+1.  
+     >> i= 0
+     >> while (i < 5):
+     >>    i=i+2
+     
+     How many time i is checked inside the loop?
+     
+     
+2.
+    >> i= 10
+    >> while (i!= -1):
+    >>    i= i-2
+    
+    Predict the O/P of the program.
+    

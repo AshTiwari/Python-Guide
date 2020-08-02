@@ -1,0 +1,121 @@
+Varibles:
+
+Naming Convention:
+
+1. You can use alphabets, numbers and ony one special characteri.e underscore ( _ )
+2. Variables can begin with alphabets and underscore but not with numbers.
+
+e.g:
+     Valid:
+     _name, _name1, _name_1, name_1, name1age
+     
+     Not valid:
+     2name, 2_name, $name, &name
+
+
+
+1. You don't have to initialize variables.
+       >>   int x=0;  (NO)
+       >>       x=0   (Yes)
+              
+              
+2.In a variable, we can store:
+        numeric values
+          >> x = 1
+          >> y = 1.000000
+        sequence -list, tuple, range
+        binary - byte, bytearray
+        boolean
+          >> flag = False
+        text i.e. string
+          >> name = "asd"
+        
+3.Nomenclature
+
+
+
+4.Why don't we have to initalize variables?        ( One of the advantage over C,C++,JAVA..)
+Ans:  Due to DYNAMIC TYPING.
+  
+      Dynamic typed languages (Python) are those in which </u>type checking</u> (i.e checking the variable type) is done at run-time 
+      whereas 
+      static typed language (E.g JAVA) are those in which type checking is done at compile-time. 
+     
+     
+5. How does Dynamic Typing works?
+Ans:  
+      >> x=3
+      
+      Python will create a PyIntObject 
+      
+      PyIntObject
+       {
+         value = 3
+         type of object = 
+         no. of refrences to this object
+        }
+       
+      Now, variable x will point to this object.
+       
+     
+     If value of x is changed, new object will be created and x will now point to that object.        
+     Now, the stored memory in object will be cleaned by garbage collector unlike languages like C.
+     => This is one of the advantage of python over other language
+     
+     ==>  Optional / Skipable
+     *************************** UNSAFE DATA IN SOME PROGRAMMING LANGUAGE ********************************
+        In  language like C, data is not deleted after end of program and is stored as garbage data.That 
+        sensitive data can get leaked.
+        
+        E.g: 
+        Program 1:
+            >> int x=1000;
+            
+        Program 2:
+            >> int y;
+            >> printf("%d",y);
+            
+        Here, value of y was never stored but it might return 1000(a random data stored in any of the previous program.)
+     ********************************************************************************************************   
+     
+
+
+6.Data Structure
+
+  Stack holds all the local variables
+  Therefore, x is stored in Stack.  
+  Link to learn stack:
+   
+  Heap holds dynamically created data.
+  Therefore, objects are stored in heap.
+  Link to learn Heap:
+  
+  
+  
+      
+      
+      
+
+
+
+
+
+
+
+********************************************* Excercise *********************************************
+1.
+    >> x= 1
+    >> y= 1.0
+    
+    Predict O/P in boolean
+    a) x is y   
+    b) x == y 
+    
+
+2. Is it valid variable name?
+       name_
+
+
+****************************************** Refrences ****************************************************
+
+1. Dynamic Typing :  https://www.youtube.com/watch?v=4W40WqovQ-E
