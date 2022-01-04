@@ -1,15 +1,5 @@
 # breadth first search.
 
-#a key-value pair represent a vertex and all it's outward edges.
-adjacent = {}
-#stores the list of vertex.
-Vertex = []
-# a key-value pair represents a vertex and its level.
-# level of the root node is zero.
-level = {}
-# a key-value pair represents a vertex and its parent.
-parent = {}
-
 def initalizeVertex():
     n = int(input('Enter the no. of vertices.\n'))
     print("Enter the vertexes.")
@@ -43,32 +33,34 @@ def showEdges():
     print(adjacent)
     print('\n')
 
-def bfs():
-    frontier = []
-    neighbour = []
-    start = input('Enter the first node.\n')    
+def bfs(adjacent, start = '0'):
+    #start = str(start)
+    current_level_nodes = []
+    next_level_nodes = []
+    level = {}
+    parent = {}
     level[start] = 0
     parent[start] = None
     level_no = 1
-    frontier.append(start)
+    current_level_nodes.append(start)
 
-    while len(frontier):
-        neighbour = []
-        for u in frontier:
-            for v in adjacent[u]:
+    while current_level_nodes:
+        next_level_nodes = []
+        for u in current_level_nodes:
+            for v in adjacent.get(u, []):
                 if v not in level.keys():
                     level[v] = level_no
                     parent[v] = u
-                    neighbour.append(v)
-        frontier = neighbour.copy()
+                    next_level_nodes.append(v)
+        current_level_nodes = next_level_nodes.copy()
         level_no +=1    
+    return level
 
-# program starts here.
-
-initalizeVertex()
-initalizeUndirectedEdges()  
-#showVertex()
-#showEdges()
-print('Implementing BFS.')
-bfs()
-print(level)
+if __name__ == "__main__":
+    adjacent = {}
+    Vertex = []
+    initalizeVertex()
+    initalizeUndirectedEdges()
+    print('Implementing BFS.')
+    level = bfs(adjacent)
+    print(level)

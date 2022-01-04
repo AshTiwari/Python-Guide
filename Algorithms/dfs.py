@@ -1,14 +1,5 @@
 #depth first search.
 
-#a key-value pair represent a vertex and all its outward edges.
-adjacent = {}
-#stores the list of vertex.
-Vertex = []
-#stores the dfs order.
-stack = []
-# a key-value pair represents a vertex and its parent.
-parent = {}
-
 def initalizeVertex():
     n = int(input('Enter the no. of vertices.\n'))
     print("Enter the vertexes.")
@@ -42,29 +33,29 @@ def showEdges():
     print(adjacent)
     print('\n')
 
-def dfs(s):
-    for neighbour in adjacent[s]:
+def dfsRecursion(adjacent, parent, dfsOrder, start):
+    for neighbour in adjacent.get(start, []):
         if neighbour not in parent.keys():
-            parent[neighbour] = s
-            stack.append(neighbour)
-            dfs(neighbour)
+            parent[neighbour] = start
+            dfsOrder.append(neighbour)
+            dfsRecursion(adjacent, parent, dfsOrder, neighbour)
             
+def dfs(adjacent, Vertex):   
+    dfsOrder = []
+    parent = {} 
 
-# program starts here
+    for v in Vertex:
+        if v not in parent.keys():
+            parent[v] = None
+            dfsOrder.append(v)
+            dfsRecursion(adjacent, parent, dfsOrder, v)
+    return dfsOrder
 
-initalizeVertex()
-#we can call initalizeDirectedEdges if it is directed graph.
-initalizeUndirectedEdges()  
-#showVertex()
-#showEdges()
-print('Implementing dFS.')
-#for a well connected grapgh, we don't need the below for loop.
-#dfs(starting_vertex) will give correct result.
-#the below for loop is used for unconnected graphs.
-for v in Vertex:
-    if v not in parent.keys():
-        parent[v] = None
-        stack.append(v)
-        dfs(v)
-print('DFS order is: ')
-print(stack)
+if __name__ == "__main__":
+    adjacent = {}
+    Vertex = []
+    initalizeVertex()
+    initalizeUndirectedEdges()
+    dfsOrder = dfs(adjacent, Vertex)
+    print('DFS order is: ')
+    print(dfsOrder)

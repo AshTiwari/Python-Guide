@@ -1,13 +1,4 @@
-#topological sort
-
-#a key-value pair represent a vertex and all it's outward edges.
-adjacent = {}
-#stores the list of vertex.
-Vertex = []
-# a key-value pair represents a vertex and its parent.
-parent = {}
-#stores the topological sort in reverse order.
-topological_sort = []
+# topological sort
 
 def initalizeVertex():
     n = int(input('Enter the no. of vertices.\n'))
@@ -34,29 +25,30 @@ def showEdges():
     print(adjacent)
     print('\n')
 
-def t_sort(s):
+def t_sort(s, adjacent):
+    global visited
+    global topological_sort
     for neighbour in adjacent[s]:
-        if neighbour not in parent.keys():
-            parent[neighbour] = s
-            #stack.append(neighbour)
-            t_sort(neighbour)
+        if neighbour not in visited.keys():
+            visited[neighbour] = 1
+            t_sort(neighbour, adjacent)
     topological_sort.append(s)      
 
+def topologicalSort(adjacent):
+    global visited
+    global topological_sort
+    topological_sort = []
+    visited = {}
+    for v in adjacent.keys():
+        if v not in visited.keys():
+            visited[v] = 1
+            t_sort(v, adjacent)
+    return topological_sort[::-1]
 
-# program starts here
 
-initalizeVertex()
-initalizeDirectedEdges()  
-#showVertex()
-#showEdges()
-print('Implementing Topological Sort.')
-#for a well connected grapgh, we don't need the below for loop.
-#dfs(starting_vertex) will give correct result.
-#the below for loop is used for unconnected graphs.
-for v in Vertex:
-    if v not in parent.keys():
-        parent[v] = None
-        t_sort(v)
+if __name__ == "__main__":
+    adjacent = {'c':['a','b'], 'a':['d'], 'b':['d'], 'e':['a','d','f'], 'd':['h','g'], 'f':['j','k'], 'g':['i'], 'h':['i','j'],'k':['j'],'i':['l'], 'j':['m'], 'l':[], 'm':[]}
+    top_sort = topologicalSort(adjacent)
+    print('Topological sort order is: ')
+    print(top_sort)
 
-print('Topological sort order is: ')
-print(topological_sort[::-1])
