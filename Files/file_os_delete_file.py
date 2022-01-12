@@ -2,6 +2,8 @@
 
 import os
 
+os.path.isfile('D://f1.txt')
+os.path.isdir('D://f1')
 
 #for deleting files, access is denied.
 #PermissionError: [WinError 5] Access is denied: 'C://Users//MSI//Desktop//folder'
